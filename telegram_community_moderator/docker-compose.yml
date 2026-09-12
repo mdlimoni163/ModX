@@ -1,9 +1,0 @@
-services:
-  telegram-moderator:
-    build: .
-    container_name: telegram-community-moderator
-    restart: unless-stopped
-    env_file:
-      - .env
-    volumes:
-      - ./data:/app/data
