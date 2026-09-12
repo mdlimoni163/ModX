@@ -1,0 +1,62 @@
+This is the same configuration as the .env file.
+Rename this file to .env only if your hosting panel requires a physical .env file.
+
+# ============================================================
+# TELEGRAM COMMUNITY MODERATOR
+# WISPBYTE DEPLOYMENT CONFIGURATION
+# ============================================================
+# IMPORTANT:
+# - Replace CHANGE_ME values with your real values.
+# - NEVER upload a real secret-filled .env file to GitHub.
+# - Keep BOT_TOKEN private.
+# ============================================================
+
+# ---------------- Telegram Bot ----------------
+BOT_TOKEN=CHANGE_ME_YOUR_BOT_TOKEN
+
+# Private moderator/team Telegram group.
+# Example: -1001234567890
+TEAM_CHAT_ID=
+
+# Optional separate logging group/channel.
+# Example: -1001234567890
+LOG_CHAT_ID=
+
+# ---------------- Database ----------------
+DATABASE_PATH=data/moderator.db
+
+# ---------------- Warning / Moderation ----------------
+WARN_LIMIT=3
+MUTE_MINUTES=60
+
+# ---------------- Spam Protection ----------------
+SPAM_WINDOW_SECONDS=12
+SPAM_MESSAGE_LIMIT=5
+DUPLICATE_WINDOW_SECONDS=60
+MAX_LINKS=2
+MAX_MENTIONS=5
+
+# ---------------- Trusted Users ----------------
+# Comma-separated Telegram user IDs.
+# Example: 123456789,987654321
+TRUSTED_USER_IDS=
+
+# ---------------- Blocked Words ----------------
+# Comma-separated terms. Keep this list focused to avoid false positives.
+BLOCKED_WORDS=scam,phishing,free-money
+
+# ---------------- Welcome Message ----------------
+WELCOME_TEXT=Welcome, {name}! 👋
+
+Please read /rules before posting. Be respectful, avoid spam, and use /report <reason> if you need moderator help.
+
+# ---------------- Community Rules ----------------
+RULES_TEXT=📜 Community Rules
+
+1. Be respectful and do not harass others.
+2. No spam, scams, phishing, or malicious links.
+3. No flooding, repeated messages, or excessive mentions.
+4. Keep discussions relevant to the community.
+5. Follow moderator instructions.
+
+Use /report <reason> to contact the moderation team.
